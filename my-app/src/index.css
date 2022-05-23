@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@layer base {
+    *{
+        @apply font-[Righteous]
+    }
+    li {
+        @apply px-4
+    }
+
+    button {
+        @apply bg-gradient-to-r from-[#FECEA8] to-[#E84A5F] py-3 px-7  rounded-3xl
+    }
+    
+    
+}
