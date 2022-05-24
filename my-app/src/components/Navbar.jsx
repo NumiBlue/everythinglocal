@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../assets/el_logo.png'
+import Logo from '../assets/logo.png'
 import {Link} from 'react-scroll'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='w-full h-[90px] bg-gradient-to-r from-black to-[#2A363B]'>
       <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
         <div>
-         <img src={Logo} alt="Logo" style={{width: '150px'}}/>
+         <img src={Logo} alt="Logo" style={{width: '200px'}}/>
         </div>
         <div className='hidden md:flex'>
           <ul className='flex text-[#99B898] items-center'>
