@@ -10,10 +10,10 @@ const Navbar = () => {
     }
 
   return (
-    <div className='w-full h-[90px] bg-gradient-to-r from-black to-[#2A363B]'>
+    <div className='w-full h-[100px] bg-gradient-to-r from-black to-[#2A363B]'>
       <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
         <div>
-         <img src={Logo} alt="Logo" style={{width: '200px'}}/>
+         <img src={Logo} className='mt-5' alt="Logo" style={{width: '250px'}}/>
         </div>
         <div className='hidden md:flex'>
           <ul className='flex text-[#99B898] items-center'>
