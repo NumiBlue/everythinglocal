@@ -10,12 +10,25 @@ const typeDefs = gql`
         
     }
 
-    type Mutation {
-        login(email: String!, password: String!): Auth
-        addUser(username: String!, email: String!, password: Sting!): Auth
-        addComment(thoughtId: ID!, reatcionBody: String!): Comment
+    type Comment {
+        _id: ID
+        commentText: String
+        createdAt: String
+        username: String
+        subCommentCount: Int
+        subComment: [subComment]
     }
 
-`;
+    type subComment {
+        _id: ID
+        reactioBody: String
+        createdAt: String
+        username: String
 
+    }
+`;
+// this goes in Mutation {}
+// login(email: String!, password: String!): Auth
+// addUser(username: String!, email: String!, password: String!): Auth
+// addComment(thoughtId: ID!, reatcionBody: String!): Comment
 module.exports = typeDefs;
