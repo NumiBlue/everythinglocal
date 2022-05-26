@@ -1,7 +1,7 @@
 import React from 'react';
 import signupImg from '../assets/austin.jpg';
-import useForm from '../useForm';
-import validate from '../validateInfo';
+import useForm from '../components/useForm';
+import validate from '../components/validateInfo';
 
 
 
@@ -13,11 +13,11 @@ const FormSignup = ({ submitForm }) => {
     
     return (
         <div className='relative w-full h-screen bg-[#2A363B]/50'>
-            <img className='absolute w-full h-full object-cover mix-blend-overlay' src={signupImg} alt="/" />
+            <img className='absolute w-full h-full object-cover mix-blend-overlay' src={signupImg} alt="austin" />
         
         <div className='flex jusify-center items-center h-full'>
             <form className='max-w-[400px] w-full mx-auto bg-[#2A363B] text-white p-8 rounded-3xl' onSubmit={handleSubmit}>
-                <h1 className='text-4xl font-bold text-center py-4 '>Everything Local</h1>
+                <h1 className='text-3xl font-bold text-center py-4 '>Everything Local</h1>
                 <h2>Sign up today! Create your account by filling out the information below.</h2>
                 <br></br>
                 <div className='flex flex-col mb-4'>
@@ -31,7 +31,7 @@ const FormSignup = ({ submitForm }) => {
                     value={values.username}
                     onChange={handleChange}
                     />
-                    {errors.username && <p className="text-red">{errors.username}</p>}
+                    {errors.username && <p className='text-red-600'>{errors.username}</p>}
                 </div>
                 <div className='flex flex-col mb-4'>
                     <label>Email:</label>
@@ -44,7 +44,7 @@ const FormSignup = ({ submitForm }) => {
                     value={values.email}
                     onChange={handleChange}
                     />
-                    {errors.email && <p className="text-red">{errors.email}</p>}
+                    {errors.email && <p className='text-red-600'>{errors.email}</p>}
                 </div>
                 <div className='flex flex-col mb-4'>
                     <label>Password:</label>
@@ -57,7 +57,7 @@ const FormSignup = ({ submitForm }) => {
                     value={values.password}
                     onChange={handleChange}
                     />
-                    {errors.password && <p className="text-red">{errors.password}</p>}
+                    {errors.password && <p className='text-red-600'>{errors.password}</p>}
                 </div>
                 <div className='flex flex-col mb-4'>
                     <label>Confirm Password:</label>
@@ -70,10 +70,10 @@ const FormSignup = ({ submitForm }) => {
                     value={values.confirmPassword}
                     onChange={handleChange}
                     />
-                    {errors.confirmPassword && <p className='text-red'>{errors.confirmPassword}</p>}
+                    {errors.confirmPassword && <p className='text-red-600'>{errors.confirmPassword}</p>}
                 </div>
-                <button className='w-full py-3 mt-8 relative text-white'>Register</button>
-                <span className='text-center mt-8'>Already have an account? Sign in <a href='./components/login'>here</a>
+                <button className='w-full py-3 mt-6 relative text-white'>Register</button>
+                <span className='text-center mt-6'>Already have an account? Sign in <a href='../components/Login'>HERE</a>
                 </span>
             </form>
         </div>

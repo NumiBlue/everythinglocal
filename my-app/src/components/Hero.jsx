@@ -1,6 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
-import backgroundImage from '../assets/mural.jpg'
+import backgroundImage from '../assets/mural.jpg';
+import FormSignup from '../components/FormSignup';
 
 const Hero = () => {
     return (
@@ -23,7 +24,7 @@ const Hero = () => {
                  />
                  </div>
                  <div>
-                     <button className='bg w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white'>Sign Up/Sign In</button>
+                     <button onClick={FormSignup} className='bg w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white'>Sign Up/Sign In</button>
                  </div>
             
         </div>

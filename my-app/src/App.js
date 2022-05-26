@@ -1,27 +1,31 @@
+import React from 'react';
 import  Navbar  from "./components/Navbar";
 import Hero  from "./components/Hero";
 import  Events   from "./components/Events";
 import  Community from "./components/Community";
 import  Footer  from "./components/Footer";
-import Login from "./components/Login";
-import Signup from "./components/FormSignup";
+import FormSignup from './components/FormSignup';
+import Login from './components/Login'
+import FormSuccess from './components/FormSuccess'
 
 
-function App() {
+
+function App () {
+
   return (
-  <>
+
     <div>
       <Navbar />
       <Hero />
       <Events />
       <Community />
       <Footer />
-    </div> 
-    <div className='hidden'>
+      <FormSignup />
       <Login />
-      <Signup />
+      <FormSuccess />
     </div>
-  </>
+  
+  
   );
 }
 

@@ -24,8 +24,9 @@ export default function Login () {
                     type='password' 
                     placeholder='Please enter your password'/>
                 </div>
-                <button className='w-full py-3 mt-8 relative text-white'>Sign In</button>
-                <span className='text-center mt-8'>Not a member? Sign up <a href='./components/signup'>here</a></span>
+                <button className='w-full py-3 mt-6 relative text-white'>Sign In</button>
+                <span className='text-center mt-6'>Not a member? Sign up <a href='../components/FormSignup'>HERE</a>
+                </span>
             </form>
         </div>
         </div>
